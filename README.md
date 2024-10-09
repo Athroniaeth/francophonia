@@ -25,6 +25,7 @@ poetry install
 To run the project, use the following commands:
 
 ```bash
+mkdocs build
 python src/francophonia
 ```
 
