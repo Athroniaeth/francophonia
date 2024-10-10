@@ -4,6 +4,9 @@ markdown_extensions:
   - codehilite
   - toc:
       permalink: True
+  - pymdownx.highlight:
+      use_pygments: True
+  - pymdownx.superfences
 theme:
   name: "material"
   # logo: "images/logo.png"
