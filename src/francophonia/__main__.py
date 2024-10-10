@@ -4,7 +4,7 @@ from pathlib import Path
 import uvicorn
 
 # Automatically add the working directory (PYTHONPATH)
-path = Path(__file__).parents[1].absolute()
+path = Path(__file__).parents[2].absolute()
 sys.path.append(f"{path}")
 
 from src.francophonia.app import app  # noqa: E402
