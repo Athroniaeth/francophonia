@@ -1,0 +1,6 @@
+services:
+  francophonia:
+    build: .
+    container_name: francophonia
+    ports:
+      - "8000:8000"  # Expose port 8000
