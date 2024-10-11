@@ -1,4 +1,5 @@
 <div align="center">
+<img src="docs/static/logo.png" alt="presentation_1" width="200" height="200">
     <h1 style="font-size: xx-large; font-weight: bold;">FrancophonIA</h1>
     <a href="#">
         <img src="https://img.shields.io/badge/Python-3.12-0">

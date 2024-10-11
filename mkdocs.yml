@@ -9,7 +9,7 @@ markdown_extensions:
   - pymdownx.superfences
 theme:
   name: "material"
-  # logo: "images/logo.png"
+  logo: "/static/logo.png"
   palette:
     scheme: default
     primary: "indigo"
