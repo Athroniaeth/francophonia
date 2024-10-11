@@ -1,4 +1,5 @@
 site_name: FrancophonIA
+
 markdown_extensions:
   - admonition
   - codehilite
@@ -7,6 +8,17 @@ markdown_extensions:
   - pymdownx.highlight:
       use_pygments: True
   - pymdownx.superfences
+
+plugins:
+  - search:
+  - tags:
+      tags_file: tags.md
+
+extra:
+  tags:
+    Outils: tool
+    Projets: project
+
 theme:
   name: "material"
   logo: "/static/logo.png"
