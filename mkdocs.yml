@@ -22,10 +22,16 @@ extra:
 theme:
   name: "material"
   logo: "/static/logo.png"
+  favicon: "/static/favicon.png"
+
+  features:
+      - navigation.tabs
+
   palette:
     scheme: default
     primary: "indigo"
     accent: "indigo"
+
   font:
     text: "Roboto"
     code: "Roboto Mono"
