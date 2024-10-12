@@ -1,0 +1,23 @@
+/* Cible l'image à côté du titre "FrancophonIA" (attention, le titre est dynamique) */
+.md-header__button.md-logo img {
+    height: 1.6rem; !important  /* 1.2rem -> 1.6rem */
+}
+
+/* Cible tous les 'code line' */
+.md-content code {
+    background-color: #e3ecff;
+}
+
+/* Cible les blocks de code sans coloration syntaxique */
+.highlight code {
+    background-color: inherit;
+}
+
+/* Cible les blocks de code avec coloration syntaxique */
+.codehilite code {
+    background-color: inherit;
+}
+
+.md-content h1 {
+    color: #242e66;
+}

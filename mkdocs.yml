@@ -21,8 +21,8 @@ extra:
 
 theme:
   name: "material"
-  logo: "/static/logo.png"
-  favicon: "/static/favicon.png"
+  logo: "/__static/img/logo.png"
+  favicon: "/__static/img/favicon.png"
 
   features:
       - navigation.tabs
@@ -35,3 +35,6 @@ theme:
   font:
     text: "Roboto"
     code: "Roboto Mono"
+
+extra_css:
+  - "/__static/css/extra.css"
