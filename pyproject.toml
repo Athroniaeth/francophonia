@@ -10,6 +10,7 @@ dependencies = [
     "uvicorn>=0.32.0",
     "fastapi>=0.115.5",
     "mkdocs-material>=9.5.44",
+    "typer>=0.13.0",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"

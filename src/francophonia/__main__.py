@@ -1,14 +1,13 @@
 import sys
 from pathlib import Path
 
-import uvicorn
 
 # Automatically add the working directory (PYTHONPATH)
 path = Path(__file__).parents[2].absolute()
 sys.path.append(f"{path}")
 
-from src.francophonia.app import app  # noqa: E402
 from src.francophonia import logger  # noqa: E402
+from francophonia.cli import cli  # noqa: E402
 
 
 def main():
@@ -28,7 +27,7 @@ def main():
     logger.info(f"Arguments passed: {arguments}")
 
     try:
-        uvicorn.run(app, host="0.0.0.0", port=8000)
+        cli()
     except KeyboardInterrupt as exception:
         logger.debug(f"Exiting the program: '{exception}'")
 
