@@ -15,6 +15,9 @@ markdown_extensions:
 
 plugins:
   - blog:
+      archive_date_format: MMMM yyyy  # Reformat the date in indexes blog
+      authors_profiles: true  # activate authors indexes blog (with 'blog/author/' folder)
+      pagination_per_page: 5  # Number of articles per page maximum
   - search:
   - tags:
       tags_file: tags.md
