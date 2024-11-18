@@ -1,19 +1,18 @@
 # Use the official Python 3.12 image
-FROM python:3.12
+FROM python:3.12.7-slim
 
 # Set the working directory inside the container
 WORKDIR /app
 
 # Upgrade pip and install Poetry
 RUN pip install --upgrade pip
-RUN pip install poetry
+RUN pip install uv
 
-# Copy the Poetry configuration files
-COPY pyproject.toml poetry.lock ./
+# Copy the Rye configuration files
+COPY README.md pyproject.toml requirements.lock ./
 
-# Install dependencies from the lock file
-RUN poetry config virtualenvs.create false
-RUN poetry install --no-root --no-interaction --no-ansi
+# Install the application dependencies
+RUN uv pip install --no-cache --system -r requirements.lock
 
 # Copy the application source code and documentation
 COPY src/ src/
@@ -24,4 +23,4 @@ COPY mkdocs.yml .
 RUN mkdocs build
 
 # Set the command to run the application
-CMD ["python", "src/francophonia/"]
+CMD ["python", "src/francophonia"]

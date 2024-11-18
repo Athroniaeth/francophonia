@@ -14,52 +14,83 @@ Project designed to bring together free resources on artificial intelligence in 
 
 ## Installation
 
-This project uses Poetry for dependency management. To install the dependencies, run the following
-command:
+This project use `rye`, to install the dependencies, you can run the following command:
 
 ```bash
-poetry install
+rye install
 ```
 
 ## Usage
 
-To run the project, use the following commands:
+This project uses `rye`, a Python environment and package manager. If you don’t have `rye` installed, visit [rye documentation](https://github.com/mitsuhiko/rye) for setup instructions.
 
 ```bash
-mkdocs build
-python src/francophonia
-```
-
-## Contribution
-
-To install the development dependencies, run:
-
-```bash
-poetry install --dev
-```
-
-To add a new dependency, use:
-
-```bash
-poetry add <dependency>
-```
-
-For development-specific dependencies, use:
-
-```bash
-poetry add --group dev <dependency>
+rye run src/francophonia run
 ```
 
 ## Structure
 
 ```bash
-├── README.md         # The file you are currently reading
-├── htmlcov           # The coverage report folder
-├── pyproject.toml    # The poetry configuration file
-├── ruff.toml         # The ruff configuration file (linter, formatter)
-├── scripts           # Scripts useful for the project (no CI/CD)
-├── src               # The source code folder
-│   ├── __init__.py   # Can add global variables
-│   ├── __main__.py   # The entry point of the project
-└── tests             # The tests folder (pytest)
+├── src               # Project source code
+├── docs              # Project documentation
+│   └── static        # README.md static files
+├── tests             # Folder containing software tests
+│   ├── units         # Unit tests
+│   └── integrations  # Integration tests
+├── scripts           # Useful scripts for the project (no CI/CD)
+├── ruff.toml         # Ruff configuration file
 ```
+
+## Containerization
+
+This project uses Docker to containerize the application. The Dockerfile is located at the root of the project. To build the Docker image, you can use the following command:
+
+```bash
+docker build -t francophonia .
+```
+
+To run the Docker container, you can use the following command:
+
+```bash
+docker run -it -p 7860:7860 francophonia
+```
+
+### Docker-compose
+
+This project have a `docker-compose.yml` file to run the project in production. To run the project, you can use the
+following command:
+
+- build: Build the Docker image if not exists
+- d: Mode daemon (run in background)
+
+```bash
+docker-compose up --build -d
+```
+
+### Tips & Other
+
+For debugging purposes, you can run the following command:
+
+```bash
+docker run -it -p 7860:7860 xxxxxx /bin/bash
+```
+
+For deleting all Docker containers, you can use the following command:
+
+```bash
+docker rm -f $(docker ps -a -q)
+```
+
+For deleting all Docker images, you can use the following command:
+
+```bash
+docker rmi -f $(docker images -q)
+``` 
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute, please fork the repository and create a pull request. Ensure your code follows the project's linting and testing standards.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

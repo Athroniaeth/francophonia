@@ -1,23 +1,29 @@
-[tool.poetry]
+[project]
 name = "francophonia"
 version = "0.1.0"
-description = ""
-authors = ["Athroniaeth <pierre.chaumont@hotmail.fr>"]
-readme = "README.md"
-package-mode = false
-packages = [
-    { include = "masterfish", from = "src" }
+description = "Add your description here"
+authors = [
+    { name = "Athroniaeth", email = "pierre.chaumont@hotmail.fr" }
 ]
-
-[tool.poetry.dependencies]
-python = "^3.12"
-mkdocs = "^1.6.1"
-uvicorn = "^0.31.1"
-fastapi = "^0.115.0"
-mkdocs-material = "^9.5.39"
-pymdown-extensions = "^10.11.2"
-
+dependencies = [
+    "mkdocs>=1.6.1",
+    "uvicorn>=0.32.0",
+    "fastapi>=0.115.5",
+    "mkdocs-material>=9.5.44",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/francophonia"]
