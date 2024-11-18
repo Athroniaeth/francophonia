@@ -1,5 +1,9 @@
 site_name: FrancophonIA
 
+repo_name: "Athroniaeth/francophonia"
+repo_url: "https://github.com/Athroniaeth/francophonia"
+edit_uri: "edit/main/docs/"
+
 markdown_extensions:
   - admonition
   - codehilite
@@ -25,7 +29,8 @@ theme:
   favicon: "/__static/img/favicon.png"
 
   features:
-      - navigation.tabs
+      - navigation.tabs  # Add tabs to the navigation bar
+      - content.action.edit  # Add an edit button (redirect to github edit page)
 
   palette:
     scheme: default

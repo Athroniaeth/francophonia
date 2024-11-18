@@ -18,6 +18,7 @@
     background-color: white;
 }
 
+/* Cible les titres de niveau 1 dans le corps du texte */
 .md-content h1 {
     color: #242e66;
 }
@@ -28,4 +29,9 @@
 /* Cible la barre de navigation */
 .md-tabs {
     background-color: #39489e;
+}
+
+/* Bouton "Edit this page" */
+.md-content__button.md-icon svg {
+    color: inherit;
 }
