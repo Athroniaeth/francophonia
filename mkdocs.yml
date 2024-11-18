@@ -36,5 +36,4 @@ theme:
     text: "Roboto"
     code: "Roboto Mono"
 
-extra_css:
-  - "/__static/css/extra.css"
+extra_css: [__static/css/extra.css]
