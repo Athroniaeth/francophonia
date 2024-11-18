@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 
-from src.francophonia import BUILD_PATH
+from francophonia import BUILD_PATH
 
 # Create the FastAPI application
 app = FastAPI()

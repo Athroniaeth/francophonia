@@ -3,10 +3,10 @@ from pathlib import Path
 
 
 # Automatically add the working directory (PYTHONPATH)
-path = Path(__file__).parents[2].absolute()
+path = Path(__file__).parents[1].absolute()
 sys.path.append(f"{path}")
 
-from src.francophonia import logger  # noqa: E402
+from francophonia import logger  # noqa: E402
 from francophonia.cli import cli  # noqa: E402
 
 
