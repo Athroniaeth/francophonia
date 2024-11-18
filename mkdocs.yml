@@ -14,6 +14,7 @@ markdown_extensions:
   - pymdownx.superfences
 
 plugins:
+  - blog:
   - search:
   - tags:
       tags_file: tags.md
