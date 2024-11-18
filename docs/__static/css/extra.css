@@ -15,7 +15,7 @@
 
 /* Cible les blocks de code avec coloration syntaxique */
 .codehilite code {
-    background-color: inherit;
+    background-color: white;
 }
 
 .md-content h1 {
@@ -25,6 +25,7 @@
 .md-header {
 }
 
+/* Cible la barre de navigation */
 .md-tabs {
     background-color: #39489e;
 }
