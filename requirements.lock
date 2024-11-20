@@ -79,6 +79,7 @@ pygments==2.18.0
     # via mkdocs-material
     # via rich
 pymdown-extensions==10.12
+    # via francophonia
     # via mkdocs-material
 python-dateutil==2.9.0.post0
     # via ghp-import

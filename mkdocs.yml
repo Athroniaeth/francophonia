@@ -7,11 +7,19 @@ edit_uri: "edit/main/docs/"
 markdown_extensions:
   - admonition
   - codehilite
-  - toc:
-      permalink: True
+  - pymdownx.superfences  # Gère les blocs de code avancés avec des onglets ou titres
+  - pymdownx.snippets  # Inclut des fichiers externes ou du code réutilisable
+  - pymdownx.details  # Ajoute des sections repliables pour du contenu additionnel
+  - pymdownx.highlight  # Améliore la coloration syntaxique
+  - pymdownx.emoji  # Permet d'utiliser des émojis dans le contenu
   - pymdownx.highlight:
       use_pygments: True
-  - pymdownx.superfences
+  - toc:
+      permalink: True
+  # - pymdownx.tabbed # Gère les blocs de code avancés avec des onglets ou titres
+  - pymdownx.blocks.tab:  # Inclut les fenêtre (tab) pour les exemples de code
+      alternate_style: true  # https://github.com/squidfunk/mkdocs-material/issues/1762
+
 
 plugins:
   - blog:
