@@ -1,4 +1,3 @@
-# The Material Team
+# Team FrancophonIA
 
-A small group of people dedicated to making writing documentation easy, if
-not outright fun! Here are some of the things we have blogged about:
+L'équipe d'administration de FrancophonIA est dédiée à la création de contenu, ainsi qu'à la gestion des corrections et des mises à jour pour garantir une expérience de qualité à nos utilisateurs.
