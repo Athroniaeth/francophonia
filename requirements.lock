@@ -34,11 +34,15 @@ ghp-import==2.1.0
     # via mkdocs
 h11==0.14.0
     # via uvicorn
+hjson==3.1.0
+    # via mkdocs-macros-plugin
+    # via super-collections
 idna==3.10
     # via anyio
     # via requests
 jinja2==3.1.4
     # via mkdocs
+    # via mkdocs-macros-plugin
     # via mkdocs-material
 markdown==3.7
     # via mkdocs
@@ -56,19 +60,24 @@ mergedeep==1.3.4
     # via mkdocs-get-deps
 mkdocs==1.6.1
     # via francophonia
+    # via mkdocs-macros-plugin
     # via mkdocs-material
 mkdocs-get-deps==0.2.0
     # via mkdocs
+mkdocs-macros-plugin==1.3.7
+    # via francophonia
 mkdocs-material==9.5.44
     # via francophonia
 mkdocs-material-extensions==1.3.1
     # via mkdocs-material
 packaging==24.2
     # via mkdocs
+    # via mkdocs-macros-plugin
 paginate==0.5.7
     # via mkdocs-material
 pathspec==0.12.1
     # via mkdocs
+    # via mkdocs-macros-plugin
 platformdirs==4.3.6
     # via mkdocs-get-deps
 pydantic==2.9.2
@@ -83,9 +92,11 @@ pymdown-extensions==10.12
     # via mkdocs-material
 python-dateutil==2.9.0.post0
     # via ghp-import
+    # via mkdocs-macros-plugin
 pyyaml==6.0.2
     # via mkdocs
     # via mkdocs-get-deps
+    # via mkdocs-macros-plugin
     # via pymdown-extensions
     # via pyyaml-env-tag
 pyyaml-env-tag==0.1
@@ -104,6 +115,10 @@ sniffio==1.3.1
     # via anyio
 starlette==0.41.2
     # via fastapi
+super-collections==0.5.3
+    # via mkdocs-macros-plugin
+termcolor==2.5.0
+    # via mkdocs-macros-plugin
 typer==0.13.0
     # via francophonia
 typing-extensions==4.12.2
